@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 public class Inicio {
 
-	private JFrame frame;
+	private JFrame frmBiblioteca;
 
 	/**
 	 * Launch the application.
@@ -16,7 +16,7 @@ public class Inicio {
 			public void run() {
 				try {
 					Inicio window = new Inicio();
-					window.frame.setVisible(true);
+					window.frmBiblioteca.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,9 +35,10 @@ public class Inicio {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmBiblioteca = new JFrame();
+		frmBiblioteca.setTitle("Biblioteca");
+		frmBiblioteca.setBounds(100, 100, 450, 300);
+		frmBiblioteca.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
