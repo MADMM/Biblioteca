@@ -1,36 +1,35 @@
 package Vistas;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.SplashScreen;
+
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 public class Tonteria3 extends JDialog {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel contentPanel = new JPanel();
-	private JProgressBar barraProgreso;
 
 	/**
 	 * Launch the application.
 	 */
+	  private JProgressBar barraProgreso;
 
-		
+	/**
+	 * Create the dialog.
+	 */
 	public Tonteria3() {
-		setBounds(100, 100, 637, 566);
+		 setBounds(100, 100, 637, 566);
 	      JPanel contentPane = new JPanel();
 	      contentPane.setLayout(new BorderLayout());
 	      setContentPane(contentPane);
@@ -38,7 +37,8 @@ public class Tonteria3 extends JDialog {
 	      //Creo una etiqueta con la imagen en el centro
 	      JLabel lblImagen = new JLabel();
 	      //Indico la imagen que quiero mostrar en la label
-	      // lblImagen.setIcon(new ImageIcon(SplashScreen.class.getResource("/gui/splash.jpg")));
+	      //Me da fallo con imagen
+	    //  lblImagen.setIcon(new ImageIcon(SplashScreen.class.getResource("splashscrean.jpg")));
 	      contentPane.add(lblImagen, BorderLayout.CENTER);
 	 
 	      //Creo un panel al sur con una barra de carga y una label para el autor
@@ -82,8 +82,9 @@ public class Tonteria3 extends JDialog {
 	      SwingUtilities.invokeLater(new Runnable() {
 	         @Override
 	         public void run() {
-	            barraProgreso.setValue(valor);
+	        	 barraProgreso.setValue(valor);
 	         }
 	      });
-	   }
 	}
+
+}

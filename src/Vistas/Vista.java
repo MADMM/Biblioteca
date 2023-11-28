@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Inicio {
+public class Vista {
 
 	private JFrame frmBiblioteca;
 
@@ -15,7 +15,7 @@ public class Inicio {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Inicio window = new Inicio();
+					Vista window = new Vista();
 					window.frmBiblioteca.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -27,7 +27,7 @@ public class Inicio {
 	/**
 	 * Create the application.
 	 */
-	public Inicio() {
+	public Vista() {
 		initialize();
 	}
 
