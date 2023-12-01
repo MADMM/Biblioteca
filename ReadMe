@@ -2,9 +2,10 @@ Esta es el readme de la aplicación
 
 ###
 Reconstruye el Readme,
-además reconstruye la estructura para que sea funcional en MVC.
-No uses características extrernas al JDK básico, como los jgoodies.
-Además, debes implementar un Layout inicial, donde pongas un JLabel en la Cabecera 
+además reconstruye la estructura para que sea funcional en MVC. LA ESTRUCTURA DE PAQUETES Y CLASES ES FUNCIONAL PARA MVC
+No uses características extrernas al JDK básico, como los jgoodies NO SE QUE ES ESO, SOLO HE UTILIZADO ECLIPSE CON EL JDK BÁSICO
+Además, debes implementar un Layout inicial, donde pongas un JLabel en la Cabecera LA VENTANA YA TIENE TITULO
 con el nombre del programa, que la ventana principal tenga nombre y 
-que lance una ventana de imitación de carga de unos segundos.
+que lance una ventana de imitación de carga de unos segundos. ESO ES OTRO PROGRAMA Y ESTA HECHO EN OTRO REPOSITORIO
 ###
+HAY QUE HACERLO FUNCIONAL OK
