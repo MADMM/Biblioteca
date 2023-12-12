@@ -12,8 +12,8 @@ public class Controlador {
 
 	public Controlador(Modelo MiModelo, PanelDeControl MiPanelDeControl) {
 		super();
-		MiModelo = MiModelo;
-		MiPanelDeControl = MiPanelDeControl;
+		this.MiModelo = MiModelo;
+		this.MiPanelDeControl = MiPanelDeControl;
 		
 	
 	}
@@ -22,7 +22,7 @@ public class Controlador {
 	 * M�todo iniciador del interfaz
 	 */
 	public void iniciarVista() {
-		
+	
 		
 		MiPanelDeControl.setTitle(MiModelo.getNombreVentana() );
 		MiPanelDeControl.setVisible(true);

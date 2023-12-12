@@ -17,7 +17,6 @@ public class Consultas {
 
 	private JFrame frmConsultas;
 	private JTextField textField;
-	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -65,23 +64,5 @@ public class Consultas {
 			}
 		});
 		frmConsultas.getContentPane().add(btnNewButton);
-		
-		table = new JTable();
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-			},
-			new String[] {
-				"New column", "New column", "New column", "New column"
-			}
-		));
-		frmConsultas.getContentPane().add(table);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		frmConsultas.getContentPane().add(lblNewLabel);
 	}
 }
