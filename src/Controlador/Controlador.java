@@ -7,8 +7,7 @@ public class Controlador {
 
 	private Modelo MiModelo;
 	private PanelDeControl MiPanelDeControl;
-	private Consultas MiConsultas;
-
+	
 
 	public Controlador(Modelo MiModelo, PanelDeControl MiPanelDeControl) {
 		super();
@@ -23,11 +22,7 @@ public class Controlador {
 	 */
 	public void iniciarVista() {
 	
-		
-		MiPanelDeControl.setTitle(MiModelo.getNombreVentana() );
-		MiPanelDeControl.setVisible(true);
-		MiPanelDeControl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
+		}
 	
 	
 	

@@ -3,12 +3,12 @@ package Modelo;
 public class Libro {
 	int id;
 	String Nombre;
-	Autor autor;
-	public Libro(int id, String nombre, Autor autor) {
+	String Autor;
+	public Libro(int id, String nombre, String autor) {
 		super();
 		this.id = id;
 		Nombre = nombre;
-		this.autor = autor;
+		Autor = autor;
 	}
 	public int getId() {
 		return id;
@@ -22,12 +22,14 @@ public class Libro {
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
-	public Autor getAutor() {
-		return autor;
+	public String getAutor() {
+		return Autor;
 	}
-	public void setAutor(Autor autor) {
-		this.autor = autor;
+	public void setAutor(String autor) {
+		Autor = autor;
 	}
+	
+
 	
 
 }

@@ -9,6 +9,7 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
+import javax.swing.JLabel;
 
 public class PanelDeControl {
 
@@ -43,21 +44,15 @@ public class PanelDeControl {
 	private void initialize() {
 		frmBiblioteca = new JFrame();
 		frmBiblioteca.setTitle("Biblioteca");
-		frmBiblioteca.setBounds(100, 100, 450, 300);
+		frmBiblioteca.setBounds(100, 100, 450, 170);
 		frmBiblioteca.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		SpringLayout springLayout = new SpringLayout();
 		frmBiblioteca.getContentPane().setLayout(springLayout);
 		
-		JButton btnConsulta = new JButton("Consulta");
-		springLayout.putConstraint(SpringLayout.WEST, btnConsulta, 45, SpringLayout.WEST, frmBiblioteca.getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, btnConsulta, 134, SpringLayout.WEST, frmBiblioteca.getContentPane());
-		frmBiblioteca.getContentPane().add(btnConsulta);
-		
-		JButton btnNuevo = new JButton("Nuevo");
-		springLayout.putConstraint(SpringLayout.NORTH, btnNuevo, 53, SpringLayout.NORTH, frmBiblioteca.getContentPane());
-		springLayout.putConstraint(SpringLayout.NORTH, btnConsulta, 0, SpringLayout.NORTH, btnNuevo);
-		springLayout.putConstraint(SpringLayout.WEST, btnNuevo, 301, SpringLayout.WEST, frmBiblioteca.getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, btnNuevo, -44, SpringLayout.EAST, frmBiblioteca.getContentPane());
-		frmBiblioteca.getContentPane().add(btnNuevo);
+		JButton btnNuevoLibro = new JButton("Nuevo Libro");
+		springLayout.putConstraint(SpringLayout.NORTH, btnNuevoLibro, 54, SpringLayout.NORTH, frmBiblioteca.getContentPane());
+		springLayout.putConstraint(SpringLayout.WEST, btnNuevoLibro, 160, SpringLayout.WEST, frmBiblioteca.getContentPane());
+		springLayout.putConstraint(SpringLayout.EAST, btnNuevoLibro, -185, SpringLayout.EAST, frmBiblioteca.getContentPane());
+		frmBiblioteca.getContentPane().add(btnNuevoLibro);
 	}
 }
