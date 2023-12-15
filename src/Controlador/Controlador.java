@@ -1,29 +1,24 @@
 package Controlador;
 
-import Modelo.*;
-import Vistas.*;
+import Modelo.Modelo;
+import Vistas.PanelDeControl;
 
 public class Controlador {
 
-	private Modelo MiModelo;
-	private PanelDeControl MiPanelDeControl;
-	
+    private Modelo miModelo;
+    private PanelDeControl miPanelDeControl;
 
-	public Controlador(Modelo MiModelo, PanelDeControl MiPanelDeControl) {
-		super();
-		this.MiModelo = MiModelo;
-		this.MiPanelDeControl = MiPanelDeControl;
-		
-	
-	}
-	
-	/**
-	 * M�todo iniciador del interfaz
-	 */
-	public void iniciarVista() {
-	
-		}
-	
-	
-	
+    public Controlador(Modelo miModelo, PanelDeControl miPanelDeControl) {
+        super();
+        this.miModelo = miModelo;
+        this.miPanelDeControl = miPanelDeControl;
+    }
+
+    /**
+     * Método iniciador del interfaz
+     */
+    public void iniciarVista() {
+        // Lógica de inicialización de la vista
+        miPanelDeControl.inicializar(this);
+    }
 }

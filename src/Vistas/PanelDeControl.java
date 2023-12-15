@@ -3,17 +3,13 @@ package Vistas;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JTextField;
+import javax.swing.JButton;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-import javax.swing.JButton;
-import javax.swing.SpringLayout;
-import javax.swing.SwingConstants;
-import javax.swing.JLabel;
 
 public class PanelDeControl {
 
-	private JFrame frmBiblioteca;
+	private JFrame frame;
 
 	/**
 	 * Launch the application.
@@ -23,7 +19,7 @@ public class PanelDeControl {
 			public void run() {
 				try {
 					PanelDeControl window = new PanelDeControl();
-					window.frmBiblioteca.setVisible(true);
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -42,17 +38,16 @@ public class PanelDeControl {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frmBiblioteca = new JFrame();
-		frmBiblioteca.setTitle("Biblioteca");
-		frmBiblioteca.setBounds(100, 100, 450, 170);
-		frmBiblioteca.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		SpringLayout springLayout = new SpringLayout();
-		frmBiblioteca.getContentPane().setLayout(springLayout);
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		JButton btnNuevoLibro = new JButton("Nuevo Libro");
-		springLayout.putConstraint(SpringLayout.NORTH, btnNuevoLibro, 54, SpringLayout.NORTH, frmBiblioteca.getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, btnNuevoLibro, 160, SpringLayout.WEST, frmBiblioteca.getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, btnNuevoLibro, -185, SpringLayout.EAST, frmBiblioteca.getContentPane());
-		frmBiblioteca.getContentPane().add(btnNuevoLibro);
+		JButton btnConsultar = new JButton("Consultar");
+		frame.getContentPane().add(btnConsultar);
+		
+		JButton btnCrear = new JButton("Crear");
+		frame.getContentPane().add(btnCrear);
 	}
+
 }
