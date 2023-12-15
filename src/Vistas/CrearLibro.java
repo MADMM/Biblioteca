@@ -9,7 +9,7 @@ import java.awt.FlowLayout;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class Libro {
+public class CrearLibro {
 
 	private JFrame frame;
 	private JTextField txtlibro;
@@ -22,7 +22,7 @@ public class Libro {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Libro window = new Libro();
+					CrearLibro window = new CrearLibro();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -34,7 +34,7 @@ public class Libro {
 	/**
 	 * Create the application.
 	 */
-	public Libro() {
+	public CrearLibro() {
 		initialize();
 	}
 
