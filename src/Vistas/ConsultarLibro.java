@@ -1,5 +1,10 @@
 package Vistas;
 
+/**
+ * Este formulario es para realizar la consultas de libros
+ * @author Miguel Angel
+ * 
+ */
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;

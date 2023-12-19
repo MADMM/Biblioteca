@@ -1,5 +1,6 @@
 package Controlador;
 /**
+ * @author Miguel Angel
  * Esta es la clase Controlador
  * 
  */

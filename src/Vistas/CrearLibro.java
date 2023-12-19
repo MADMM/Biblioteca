@@ -1,5 +1,9 @@
 package Vistas;
 
+/**
+ * Este es el formulario para crear un libro
+ * @author Miguel Angel
+ */
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;

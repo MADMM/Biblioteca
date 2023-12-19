@@ -1,5 +1,9 @@
 package Aplicacion;
-
+/**
+ * @author Miguel Angel
+ * esta es la clase principal
+ * 
+ */
 import Vistas.PanelDeControl;
 import Controlador.Controlador;
 import Modelo.Modelo;

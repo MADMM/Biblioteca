@@ -1,4 +1,7 @@
 package Vistas;
+/**
+ * este es el formulario Principal del panel de control
+ */
 
 import java.awt.EventQueue;
 
