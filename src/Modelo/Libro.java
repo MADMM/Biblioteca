@@ -1,5 +1,15 @@
 package Modelo;
 
+/**
+ * ESTA ES LA CLASE LIBRO
+ * Los atributos de la clase libro son
+ * id
+ * Nombre
+ * Autor
+ * @author Miguel Angel
+ * @version 1.0
+ */
+
 public class Libro {
 	int id;
 	String Nombre;

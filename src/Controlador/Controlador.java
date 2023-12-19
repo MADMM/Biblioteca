@@ -1,6 +1,10 @@
 package Controlador;
-
+/**
+ * Esta es la clase Controlador
+ * 
+ */
 import Modelo.Modelo;
+
 import Vistas.PanelDeControl;
 
 public class Controlador {
@@ -17,8 +21,9 @@ public class Controlador {
     /**
      * Método iniciador del interfaz
      */
+    
     public void iniciarVista() {
         // Lógica de inicialización de la vista
-        miPanelDeControl.inicializar(this);
+      //  miPanelDeControl.inicializar(this);
     }
 }
