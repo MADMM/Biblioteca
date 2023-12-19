@@ -53,7 +53,7 @@ public class ConsultarLibro {
 		frame.getContentPane().add(txtFieldConsultar);
 		txtFieldConsultar.setColumns(10);
 		
-		JButton btnNewButton = new JButton("New button");
+		JButton btnNewButton = new JButton("Consultar");
 		frame.getContentPane().add(btnNewButton);
 	}
 

@@ -12,7 +12,7 @@ import java.awt.FlowLayout;
 
 public class PanelDeControl {
 
-	private JFrame frame;
+	private JFrame frmPanelDeControl;
 
 	/**
 	 * Launch the application.
@@ -22,7 +22,7 @@ public class PanelDeControl {
 			public void run() {
 				try {
 					PanelDeControl window = new PanelDeControl();
-					window.frame.setVisible(true);
+					window.frmPanelDeControl.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -41,16 +41,17 @@ public class PanelDeControl {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		frmPanelDeControl = new JFrame();
+		frmPanelDeControl.setTitle("Panel de Control");
+		frmPanelDeControl.setBounds(100, 100, 450, 234);
+		frmPanelDeControl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmPanelDeControl.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		JButton btnConsultar = new JButton("Consultar");
-		frame.getContentPane().add(btnConsultar);
+		frmPanelDeControl.getContentPane().add(btnConsultar);
 		
 		JButton btnCrear = new JButton("Crear");
-		frame.getContentPane().add(btnCrear);
+		frmPanelDeControl.getContentPane().add(btnCrear);
 	}
 
 }
